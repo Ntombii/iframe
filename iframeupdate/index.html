@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="600">
+    <title>Document</title>
+    <script>
+       function reload(){
+        document.getElementById("gis").src="https://coega.maps.arcgis.com/apps/dashboards/654934456319447481dbccfc6dc34956"
+       }
+       setInterval(reload,900000)
+
+    </script>
+    <!-- <script>
+        window.setInterval("reloadIFrame();", 1000);
+       
+        function reloadIFrame() {
+         document.frames["ARCGIS"].location.reload();
+        }
+        </script> -->
+</head>
+<body> 
+    <iframe id="gis" src="https://coega.maps.arcgis.com/apps/dashboards/654934456319447481dbccfc6dc34956" title="ARCGIS" width="100%" height="700"></iframe>
+
+    
+   <!-- <script>
+        window.setInterval(function() {
+            reloadIFrame()
+        }, 200);
+
+        function reloadIFrame() {
+            console.log('reloading..');
+            document.getElementById('gis').contentWindow.location.reload();
+        }
+    </script>-->
+</body>
+</html>
